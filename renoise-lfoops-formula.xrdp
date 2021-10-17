@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FilterDevicePreset doc_version="13">
+  <DeviceSlot type="FormulaMetaDevice">
+    <IsMaximized>true</IsMaximized>
+    <FormulaParagraphs>
+      <FormulaParagraph>lfoops()</FormulaParagraph>
+    </FormulaParagraphs>
+    <FunctionsParagraphs>
+      <FunctionsParagraph>function lfoops()</FunctionsParagraph>
+      <FunctionsParagraph>    len = A * 100</FunctionsParagraph>
+      <FunctionsParagraph>    mid = B</FunctionsParagraph>
+      <FunctionsParagraph>    off = C * 100 + SEQPOS</FunctionsParagraph>
+      <FunctionsParagraph>    loff = LINE / NUMLINES / len</FunctionsParagraph>
+      <FunctionsParagraph>    amp = off / len - floor((off) / len) + loff - floor(amp)</FunctionsParagraph>
+      <FunctionsParagraph>    if (amp &lt;= mid and amp &gt; 0) then</FunctionsParagraph>
+      <FunctionsParagraph>        amp = amp / mid</FunctionsParagraph>
+      <FunctionsParagraph>    elseif (amp &gt; mid and amp &lt;= 1) then</FunctionsParagraph>
+      <FunctionsParagraph>        amp = 1 - (amp - mid) / (1 - mid)</FunctionsParagraph>
+      <FunctionsParagraph>    end</FunctionsParagraph>
+      <FunctionsParagraph>    if (mid == 0 and amp == 0) then</FunctionsParagraph>
+      <FunctionsParagraph>        return 1</FunctionsParagraph>
+      <FunctionsParagraph>    end</FunctionsParagraph>
+      <FunctionsParagraph>    return amp</FunctionsParagraph>
+      <FunctionsParagraph>end</FunctionsParagraph>
+      <FunctionsParagraph/>
+    </FunctionsParagraphs>
+    <InputNameA>A</InputNameA>
+    <InputNameB>B</InputNameB>
+    <InputNameC>C</InputNameC>
+    <EditorVisible>true</EditorVisible>
+    <InputA>
+      <Value>0.0299999993</Value>
+    </InputA>
+    <InputB>
+      <Value>0.0500000007</Value>
+    </InputB>
+    <InputC>
+      <Value>0.0</Value>
+    </InputC>
+  </DeviceSlot>
+</FilterDevicePreset>
