@@ -3,6 +3,7 @@ function lfoops()
     mid = B
     off = C * 100 + SEQPOS
     loff = LINE / NUMLINES / len
+    amp = 0
     amp = off / len - floor((off) / len) + loff - floor(amp)
     if (amp <= mid and amp > 0) then
         amp = amp / mid

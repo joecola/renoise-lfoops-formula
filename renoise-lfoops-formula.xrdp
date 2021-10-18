@@ -11,6 +11,7 @@
       <FunctionsParagraph>    mid = B</FunctionsParagraph>
       <FunctionsParagraph>    off = C * 100 + SEQPOS</FunctionsParagraph>
       <FunctionsParagraph>    loff = LINE / NUMLINES / len</FunctionsParagraph>
+      <FunctionsParagraph>    amp = 0</FunctionsParagraph>
       <FunctionsParagraph>    amp = off / len - floor((off) / len) + loff - floor(amp)</FunctionsParagraph>
       <FunctionsParagraph>    if (amp &lt;= mid and amp &gt; 0) then</FunctionsParagraph>
       <FunctionsParagraph>        amp = amp / mid</FunctionsParagraph>
@@ -22,7 +23,6 @@
       <FunctionsParagraph>    end</FunctionsParagraph>
       <FunctionsParagraph>    return amp</FunctionsParagraph>
       <FunctionsParagraph>end</FunctionsParagraph>
-      <FunctionsParagraph/>
     </FunctionsParagraphs>
     <InputNameA>A</InputNameA>
     <InputNameB>B</InputNameB>
