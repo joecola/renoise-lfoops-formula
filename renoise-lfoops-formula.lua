@@ -1,7 +1,7 @@
 function lfoops()
     len = A * 100
     mid = B
-    off = C * 100 + SEQPOS
+    off = (C * 100) - SEQPOS + len
     loff = LINE / NUMLINES / len
     amp = 0
     amp = off / len - floor((off) / len) + loff - floor(amp)
