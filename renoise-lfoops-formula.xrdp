@@ -9,7 +9,7 @@
       <FunctionsParagraph>function lfoops()</FunctionsParagraph>
       <FunctionsParagraph>    len = A * 100</FunctionsParagraph>
       <FunctionsParagraph>    mid = B</FunctionsParagraph>
-      <FunctionsParagraph>    off = C * 100 + SEQPOS</FunctionsParagraph>
+      <FunctionsParagraph>    off = (C * 100) - SEQPOS + len</FunctionsParagraph>
       <FunctionsParagraph>    loff = LINE / NUMLINES / len</FunctionsParagraph>
       <FunctionsParagraph>    amp = 0</FunctionsParagraph>
       <FunctionsParagraph>    amp = off / len - floor((off) / len) + loff - floor(amp)</FunctionsParagraph>
